@@ -1,27 +1,49 @@
-interface RecipeCardProps {
-  id: string
-  key: string
-  title: string
-  image: string
-  imageAlt: string
-  minutes: number
-}
+import { useState } from "react";
+import type { RecipeData } from "./types"
+
+
+type RecipeCardProps = Omit<RecipeData, "id" | "diet" | "category">
 
 const RecipeCard = (
   {
-    id,
-    key,
-    title, 
+    title,
+    description,
     image,
     imageAlt,
-    minutes
+    minutes,
+    servings,
+    ingredients,
+    steps
   }: RecipeCardProps
 ) => {
+  const [active, setActive] = useState(false); 
+
   return (
-    <div id={id} key={key}>
+    <div data-active={active} onClick={() => setActive(!active)}>
       <h2>{title}</h2>
       <img src={image} alt={imageAlt} />
       <p>Cooking time: {minutes} minutes</p>
+
+      {active && (
+        <div>
+          <p id="description">{description}</p>
+          {/* Display servings, ingredients, and steps*/}
+          <p id="servings">Servings: {servings}</p>
+          <div id="ingredients">
+            <p>Ingredients:</p>
+            <ul>
+              {ingredients.map((ingredient) => <li>{ingredient}</li>)}
+            </ul>
+          </div>
+          <div id="steps">
+            <p>Steps:</p>
+            <ul>
+              {steps.map((step) => <li>{step}</li>)}
+            </ul>
+          </div>
+        </div>
+        
+      )}
     </div>
   )
 }
