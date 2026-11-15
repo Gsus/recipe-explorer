@@ -1,0 +1,115 @@
+[
+  {
+    "id": "lemon-orzo",
+    "title": "Lemon & garden greens orzo",
+    "description": "A little sunshine in a bowl. Bright lemon, tender greens and a handful of basil.",
+    "minutes": 25,
+    "servings": 2,
+    "diet": [
+      "vegetarian"
+    ],
+    "category": "Weeknight favourites",
+    "ingredients": [
+      "180 g orzo",
+      "100 g peas",
+      "2 handfuls spinach",
+      "150 g cherry tomatoes",
+      "1 lemon",
+      "2 tbsp olive oil",
+      "Fresh basil, salt and pepper"
+    ],
+    "steps": [
+      "Cook the orzo in salted water until tender, adding the peas for the final 3 minutes. Reserve a mug of cooking water, then drain.",
+      "Warm the olive oil in a pan. Add the tomatoes and cook until softened, then fold in the spinach.",
+      "Add the orzo, peas, lemon zest and a squeeze of lemon juice. Loosen with a splash of reserved water.",
+      "Season to taste, scatter over the basil and serve warm."
+    ],
+    "image": "https://start.dev/project-assets/recipe-explorer/lemon-orzo.webp",
+    "imageAlt": "Lemon & garden greens orzo"
+  },
+  {
+    "id": "harvest-bowl",
+    "title": "The feel-good harvest bowl",
+    "description": "Roasted sweet potato, crisp greens and creamy tahini. Lunch with a little more colour.",
+    "minutes": 35,
+    "servings": 2,
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "category": "Plant-powered",
+    "ingredients": [
+      "1 sweet potato, cubed",
+      "1 can chickpeas, drained",
+      "120 g quinoa",
+      "1 avocado",
+      "Half a cucumber",
+      "2 tbsp tahini",
+      "1 tbsp lemon juice",
+      "Pickled red onion and cilantro"
+    ],
+    "steps": [
+      "Heat the oven to 200°C. Toss the sweet potato and chickpeas with a little oil and roast for 25 minutes.",
+      "Cook the quinoa following the packet instructions. Slice the avocado and cucumber.",
+      "Whisk the tahini with lemon juice and a little water until pourable.",
+      "Divide everything between two bowls. Finish with the pickled onion, cilantro and dressing."
+    ],
+    "image": "https://start.dev/project-assets/recipe-explorer/harvest-bowl.webp",
+    "imageAlt": "The feel-good harvest bowl"
+  },
+  {
+    "id": "tomato-toast",
+    "title": "Slow morning tomato toast",
+    "description": "Jammy tomatoes, whipped ricotta and good sourdough. A reason to sit down for breakfast.",
+    "minutes": 15,
+    "servings": 2,
+    "diet": [
+      "vegetarian"
+    ],
+    "category": "Slow mornings",
+    "ingredients": [
+      "2 thick slices sourdough",
+      "100 g ricotta",
+      "200 g cherry tomatoes",
+      "1 tbsp olive oil",
+      "Fresh basil",
+      "Salt and cracked pepper"
+    ],
+    "steps": [
+      "Warm the oil in a pan and add the tomatoes. Cook for 8 minutes until they soften and blister.",
+      "Toast the sourdough. Stir a pinch of salt and pepper into the ricotta.",
+      "Spread the ricotta onto the toast and spoon over the tomatoes.",
+      "Finish with basil and a little olive oil. Serve straight away."
+    ],
+    "image": "https://start.dev/project-assets/recipe-explorer/tomato-toast.webp",
+    "imageAlt": "Slow morning tomato toast"
+  },
+  {
+    "id": "salmon-lentils",
+    "title": "Golden salmon & herby lentils",
+    "description": "Crisp-edged salmon, earthy lentils and lemon. A satisfying dinner without the fuss.",
+    "minutes": 30,
+    "servings": 2,
+    "diet": [
+      "gluten-free"
+    ],
+    "category": "Weeknight favourites",
+    "ingredients": [
+      "2 salmon fillets",
+      "250 g cooked green lentils",
+      "1 bunch asparagus",
+      "1 lemon",
+      "1 tbsp olive oil",
+      "Fresh dill",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Pat the salmon dry and season. Heat the oil in a pan over medium-high heat.",
+      "Cook the salmon skin-side down for 5 minutes, then turn and cook until opaque and cooked through.",
+      "Meanwhile steam the asparagus and warm the lentils with lemon zest, dill and a little oil.",
+      "Serve the salmon over the lentils with asparagus, lemon wedges and extra dill."
+    ],
+    "image": "https://start.dev/project-assets/recipe-explorer/salmon-lentils.webp",
+    "imageAlt": "Golden salmon & herby lentils"
+  }
+]
