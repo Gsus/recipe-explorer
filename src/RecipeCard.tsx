@@ -16,7 +16,7 @@ const RecipeCard = (
     steps
   }: RecipeCardProps
 ) => {
-  const [active, setActive] = useState(false); 
+  const [active, setActive] = useState(false);
 
   return (
     <div data-active={active} onClick={() => setActive(!active)}>
