@@ -6,7 +6,7 @@ import recipesData from "../data/recipes.json"
 function App() {
   return (
     <div>
-      <h1 className="text-3xl">Ready to build</h1>
+      <h1 className="text-3xl">Recipes!</h1>
       <Recipes recipes={recipesData}/>
     </div>
     );

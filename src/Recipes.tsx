@@ -33,7 +33,7 @@ const Recipes = ({ recipes }: RecipesProps) => {
 
   // 2nd filter
   // Filter by title, ingredient (search bar), and diet (button selector)
-  let filteredBySearchBar = filtered.filter((recipe) => {
+  let results = filtered.filter((recipe) => {
     // Filter by title
     if (recipe.title.toLowerCase().includes(searchTerm)) return true
     // Filter by ingredient
@@ -42,6 +42,12 @@ const Recipes = ({ recipes }: RecipesProps) => {
     )
     if (isInIngredients) return true;
   })
+
+  // Reset states if no matches
+  const resetQueries = (): void => {
+    setQuery("");
+    setDiet("all");
+  }
 
   return (
     <div>
@@ -70,11 +76,18 @@ const Recipes = ({ recipes }: RecipesProps) => {
         </button>
       </div>
 
-      {/* Testing buttons state*/}
-      {`Clicked button: ${diet}`}
+      <p>Total recipes: {results.length}</p>
+      
+      {results.length <= 0 && (
+        <div className="my-2">
+          <p>Unfortunately, there's no result with the current filters</p>
+          <button className="rounded-full bg-green-200 py-2 px-4 m-2 min-w-12" onClick={() => resetQueries()}>
+            Reset filters
+          </button>
+        </div>
+      )}
 
-
-      {filteredBySearchBar.map((recipe) => (
+      {results.map((recipe) => (
         <RecipeCard
           key={recipe.id}
           title={recipe.title}
