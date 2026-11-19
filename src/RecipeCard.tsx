@@ -2,7 +2,7 @@ import { useState } from "react";
 import type { RecipeData } from "./types"
 
 
-type RecipeCardProps = Omit<RecipeData, "id" | "diet" | "category">
+type RecipeCardProps = Omit<RecipeData, "id" | "category">
 
 const RecipeCard = (
   {
@@ -13,13 +13,14 @@ const RecipeCard = (
     minutes,
     servings,
     ingredients,
-    steps
+    steps,
+    diet
   }: RecipeCardProps
 ) => {
   const [active, setActive] = useState(false);
 
   return (
-    <div data-active={active} onClick={() => setActive(!active)}>
+    <div data-active={active} onClick={() => setActive(!active)} className="m-4 p-2 border ">
       <h2>{title}</h2>
       <img src={image} alt={imageAlt} />
       <p>Cooking time: {minutes} minutes</p>

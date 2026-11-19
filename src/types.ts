@@ -4,10 +4,12 @@ export interface RecipeData {
   description: string
   minutes: number
   servings: number
-  diet: string[]
+  diet: DietOptions[]
   category: string
   ingredients: string[]
   steps: string[]
   image: string
   imageAlt: string
 }
+
+export type DietOptions = "all" | "vegetarian" | "vegan" | "gluten-free"
